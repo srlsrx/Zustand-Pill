@@ -31,7 +31,7 @@ const Home = () => {
         {
             title: "¿Por qué usar Zustand?",
             content: (
-                <ul className="list-disc list-none pl-5 space-y-1">
+                <ul className="list-none pl-5 space-y-1">
                     <li className="flex items-start gap-2">
                         <FaCheckCircle className="mt-1 text-blue-500 flex-shrink-0" />
                         <span>No necesitas <strong>Providers</strong>, ni configuración adicional.</span>
