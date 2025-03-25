@@ -12,7 +12,7 @@ const Header = () => {
         <header className="flex absolute top-0 left-0 w-full items-center justify-between px-6 py-4 bg-gray-100 shadow-md">
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
                 <img
-                    src="/favicon.svg"
+                    src="/Zustand-Pill/favicon.svg"
                     alt="Zustand Logo"
                     className="w-17 h-17"
                 />
