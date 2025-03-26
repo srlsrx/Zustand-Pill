@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { FaPlus } from "react-icons/fa";
+import { FaPlus, FaBars, FaTimes } from "react-icons/fa";
 import CartIcon from "./CartIcon";
 import TodoModal from "./TodoModal";
 
 const Header = () => {
     const navigate = useNavigate();
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         <header className="flex absolute top-0 left-0 w-full items-center justify-between px-6 py-4 bg-gray-100 shadow-md">
@@ -20,7 +21,19 @@ const Header = () => {
                     Zustand Demo
                 </h1>
             </div>
-            <nav className="flex gap-4">
+            <div className="md:hidden">
+                <button
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    className="text-gray-700 text-xl focus:outline-none"
+                >
+                    {isMenuOpen ? <FaTimes /> : <FaBars />}
+                </button>
+            </div>
+            <nav
+                className={`${
+                    isMenuOpen ? "flex flex-col absolute top-35 right-0 bg-white shadow-lg p-4 rounded-lg gap-4" : "hidden"
+                } md:flex md:static md:flex-row md:items-center md:gap-4`}
+            >
                 <button
                     onClick={() => navigate("/counter")}
                     className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"

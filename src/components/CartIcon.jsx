@@ -5,10 +5,10 @@ const CartIcon = () => {
     const count = useCounterStore((state) => state.count);
 
     return (
-        <div className="relative inline-block">
+        <div className="relative flex justify-center items-center w-17">
             <FaShoppingCart className="text-4xl text-gray-800" />
             {count > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
+                <span className="absolute -top-3 -right-0 bg-red-500 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
                     {count}
                 </span>
             )}

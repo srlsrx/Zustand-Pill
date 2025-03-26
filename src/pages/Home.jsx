@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import CodeBlock from "../components/CodeBlock";
-import CodeModal from "../components/CodeModal";
 
 const Home = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -98,8 +97,8 @@ const BeersCounter = () => {
     ];
 
     return (
-        <div className="max-w-4xl mx-auto mt-10 px-4">
-            <div className="flex justify-center mb-6 gap-2 flex-wrap">
+        <div className="max-w-90 md:max-w-4xl mx-auto mt-16 px-0 sm:px-1 md:px-8">
+            <div className="flex flex-wrap justify-center mb-6 gap-2">
                 {sections.map((_, index) => (
                     <button
                         key={index}
@@ -115,7 +114,7 @@ const BeersCounter = () => {
                 ))}
             </div>
 
-            <section className="bg-white text-gray-800 rounded-lg border flex flex-col items-center justify-center border-gray-700 p-6 w-210 min-h-100 shadow-md">
+            <section className="bg-white dark:bg-gray-800 text-gray-800 dark:text-white rounded-lg border border-gray-700 p-6 w-full min-h-[280px] shadow-md">
                 <h2 className="text-2xl font-semibold mb-4 text-center">{sections[activeTab].title}</h2>
                 <div key={activeTab} className="text-lg leading-relaxed transition-opacity duration-500 ease-in-out opacity-100">
                     {sections[activeTab].content}
