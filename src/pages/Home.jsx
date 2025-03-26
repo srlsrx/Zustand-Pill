@@ -103,7 +103,7 @@ const BeersCounter = () => {
                     <button
                         key={index}
                         onClick={() => setActiveTab(index)}
-                        className={`px-4 py-2 rounded-md border text-sm transition ${
+                        className={`px-4 py-2 rounded-md border text-sm min-w-60 md:min-w-30 transition ${
                             activeTab === index
                                 ? 'bg-gray-700 text-white border-blue-600'
                                 : 'bg-blue-600 text-gray-100 border-gray-600 hover:bg-gray-600'
