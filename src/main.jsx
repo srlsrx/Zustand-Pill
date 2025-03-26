@@ -7,7 +7,7 @@ import Header from './components/Header.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <main className="pt-15">
+    <main className="pt-20 flex flex-col justify-center items-center">
     <BrowserRouter>
     <Header />
       <App />

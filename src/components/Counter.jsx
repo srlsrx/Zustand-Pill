@@ -4,7 +4,7 @@ const Counter = () => {
     const { count, increase, decrease, reset } = useCounterStore();
 
     return (
-        <div className="text-center mt-20 p-10 rounded-lg bg-white">
+        <div className="text-center mt-10 p-10 rounded-lg w-85 md:w-100 bg-white">
             <h2 className="text-2xl text-gray-800 font-semibold mb-4">
                 Contador con Zustand
             </h2>
