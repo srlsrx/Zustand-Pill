@@ -1,12 +1,57 @@
-# React + Vite
+# 🐻 ZustandPill
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una demo interactiva creada con React + Zustand para entender y experimentar cómo funciona el estado global con esta librería minimalista.
 
-Currently, two official plugins are available:
+## 🚀 ¿Qué es Zustand?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Zustand](https://github.com/pmndrs/zustand) es una librería para la gestión de estado en React que destaca por su simplicidad, rendimiento y ausencia de boilerplate. Permite crear y consumir estado global sin necesidad de Providers ni configuraciones complicadas.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Características del proyecto
+
+- 🔄 Estado global compartido entre componentes sin contextos
+- ✅ Ejemplos interactivos:
+  - Contador global sincronizado con un icono de carrito
+  - Lista de tareas gestionada con Zustand
+  - Snippets de código mostrados con `CodeBlock` y opción de copiar
+- 📚 Pestañas explicativas con información y ejemplos sobre Zustand
+- 💅 Estilo limpio, moderno y responsive con TailwindCSS
+- 🧠 Arquitectura escalable, preparada para slices
+
+---
+
+## 🖥️ Demo local
+
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/srlsrx/Zustand-Pill.git
+cd Zustand-Pill
+```
+
+2.	Instala dependencias:
+   
+```bash
+npm install
+```
+
+3.	Inicia el servidor:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🗂️ Estructura del proyecto
+
+```bash
+src/
+├── components/     → Componentes reutilizables (Counter, CartIcon, CodeBlock, Modals...)
+├── pages/          → Vistas principales del proyecto (Home, CounterExample, TodoListPage...)
+├── store/          → Zustand stores (useCounterStore, useTodoStore, etc.)
+├── App.jsx         → Rutas y estructura general
+└── main.jsx        → Entrada principal con Router y layout global
+```
+
