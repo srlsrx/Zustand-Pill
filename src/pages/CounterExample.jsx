@@ -7,7 +7,7 @@ const CounterExample = () => {
     const [activeModal, setActiveModal] = useState(null);
     return (
         <>
-            <div className="max-w-md mx-auto mt-10 mb-6 px-4 pt-3 text-center text-gray-700">
+            <div className="max-w-md mx-auto mt-20 mb-6 px-4 pt-3 text-center text-gray-700">
                 <div className="text-lg text-white bg-blue-500 p-4 rounded-lg flex flex-col items-center gap-2">
                     <FaInfoCircle className="text-white text-xl flex-shrink-0" />
                     <span>
