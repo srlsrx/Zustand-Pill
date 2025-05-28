@@ -10,7 +10,7 @@ const Home = () => {
             content: (
                 <p>
                     <strong>Zustand</strong> es una <strong>librería minimalista</strong> para la gestión de <strong>estado global</strong> en aplicaciones React.
-                    Su nombre significa <em>“estado”</em> en alemán, y fue creada por el equipo de <strong>Poimandres</strong> 
+                    Su nombre significa <em>“estado”</em> en alemán y fue creada por el equipo de <strong>Poimandres</strong> 
                     (también responsables de <strong>Jotai</strong>).
 
                     <br /><br />
